@@ -1,0 +1,53 @@
+.row,
+.column {
+    display: flex;
+}
+
+.row { flex-direction: row; }
+.column { flex-direction: column; }
+
+#interface-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#drum-machine {
+    max-width: 448px;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+#display,
+.drum-pad {
+    background-color: #212121;
+    border-radius: 16px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+#display {
+    width: 100%;
+    height: 138px;
+}
+
+.drum-pad {
+    min-width: 20%;
+    width: calc(100% / 3 - 11px);
+    max-width: 35%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.drum-pad:hover {
+    background-color: #C1E949;
+    color: #0F0F0F;
+}
